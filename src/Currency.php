@@ -26,7 +26,6 @@ class Currency
         ]);
 
     }
-
     
     /**
      * Converts a specified amount from one currency to another.
