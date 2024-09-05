@@ -17,7 +17,8 @@ class Currency
 
     protected $client;
 
-    public function __construct(){
+    public function __construct()
+    {
 
         $this->client = new Client([
             'base_uri' => self::BASE_URL,
