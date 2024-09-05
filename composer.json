@@ -14,5 +14,8 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "guzzle/guzzle": "^3.9",
+        "guzzlehttp/guzzle": "^7.9"
+    }
 }
