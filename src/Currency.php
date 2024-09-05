@@ -73,20 +73,17 @@ class Currency
                 );
  
                 return [
-                    'status'=> 200,
                     'data' => $result,
                 ];
                 
             } else {
                 return [
-                    'status'=> 400,
                     'error' => 'Error: Conversion result not found in response.',
                 ];
             }
         
         } catch (RequestException $e) {
             return [
-                'status'=> 400,
                 'error' => $e->getMessage(),
             ];
         }
@@ -120,20 +117,17 @@ class Currency
             if (isset($data)) {
  
                 return [
-                    'status'=> 200,
                     'data' => $data['available_currencies'],
                 ];
                 
             } else {
                 return [
-                    'status'=> 400,
                     'error' => 'Error: Conversion result not found in response.',
                 ];
             }
         
         } catch (RequestException $e) {
             return [
-                'status'=> 400,
                 'error' => $e->getMessage(),
             ];
         }
@@ -166,20 +160,17 @@ class Currency
             if (isset($data)) {
  
                 return [
-                    'status'=> 200,
                     'data' => $data['available_currencies'],
                 ];
                 
             } else {
                 return [
-                    'status'=> 400,
                     'error' => 'Error: Conversion result not found in response.',
                 ];
             }
         
         } catch (RequestException $e) {
             return [
-                'status'=> 400,
                 'error' => $e->getMessage(),
             ];
         }
@@ -259,20 +250,17 @@ class Currency
                 }
  
                 return [
-                    'status'=> 200,
                     'data' => $result,
                 ];
                 
             } else {
                 return [
-                    'status'=> 400,
                     'error' => 'Error: Conversion result not found in response.',
                 ];
             }
         
         } catch (RequestException $e) {
             return [
-                'status'=> 400,
                 'error' => $e->getMessage(),
             ];
         }
