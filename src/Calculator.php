@@ -13,4 +13,14 @@ class Calculator
     {
         return $a - $b;
     }
+
+    public function bahagi($a, $b)
+    {
+        return $a / $b;
+    }
+
+    public function darab($a, $b)
+    {
+        return $a * $b;
+    }
 }
