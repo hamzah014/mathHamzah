@@ -73,7 +73,7 @@ class Locator
     private function getCountry() : array
     {
         // Path to the JSON file
-        $jsonFilePath = 'src/data/countries.json';
+        $jsonFilePath = __DIR__ . '/data/countries.json';
 
         // Get the JSON content
         $jsonContent = file_get_contents($jsonFilePath);
