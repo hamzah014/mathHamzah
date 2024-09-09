@@ -1,6 +1,7 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 use MathHamzah\Calculator;
+use MathHamzah\Conversion;
 use MathHamzah\Currency;
 use MathHamzah\Locator;
 
@@ -39,8 +40,8 @@ $currency = new Currency();
 $ip = '34.39.131.22';
 $ipLocator = new Locator($ip);
 
-echo "\n Complete";
-print_r($ipLocator->getAll());
+// echo "\n Complete";
+// print_r($ipLocator->getAll());
 // echo "\n Local";
 // print_r($ipLocator->getLocale());
 // echo "\n Local";
@@ -50,3 +51,7 @@ print_r($ipLocator->getAll());
 // echo "\n info";
 // print_r($ipLocator->getCurrency());
 
+$apiKey = 'UAHflQitdZigQKsGR62M';
+$conversion = new Conversion($apiKey);
+
+print_r($conversion->convert('USD','MYR',630)); 
